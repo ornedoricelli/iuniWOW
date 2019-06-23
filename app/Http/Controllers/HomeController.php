@@ -39,10 +39,18 @@ class HomeController extends Controller
     $usuario = User::find(1);
     $puntos = $usuario->puntos;
     $nombre_auto = $usuario->nombre_auto;
-
+    $premio1 = $usuario->premio1;
+    $premio2 = $usuario->premio2;
+    $premio3 = $usuario->premio3;
+    $premio4 = $usuario->premio4;
+    
     return view('home')->with([
       'puntos'=> $puntos,
-      'nombreAuto' => $nombre_auto
+      'nombreAuto' => $nombre_auto,
+      'premio1' => $premio1,
+      'premio2'=> $premio2,
+      'premio3' => $premio3,
+      'premio4' => $premio4
   ]);
   }
   public function showPerfil(){

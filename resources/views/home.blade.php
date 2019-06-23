@@ -23,20 +23,20 @@
               </div>
                   <h1 class="text-center mb-5">{{$puntos}} <span class="badge badge-secondary">iúniPoints</span></h1>
                         <?php
-                        if ($puntos==5000){
-                          echo ('<a href="/home/canje/5000">Canjear Premio 4</a>');
-                        } ;
-                        if ($puntos>=3000){
-                          echo ('<a href="/home/canje/3000">Canjear Premio 3</a>');
-                        } ;
+                        if ($puntos>=750){
+                          echo ('<a href="/home/canje/750">Canjear '. $premio1 . '</a> <br>');
+                        };
 
                         if ($puntos>=1500){
-                          echo ('<a href="/home/canje/1500">Canjear Premio 2</a>');
+                          echo ('<a href="/home/canje/1500">Canjear '. $premio2 . '</a> <br>');
+                        } ;
+                        if ($puntos>=3000){
+                          echo ('<a href="/home/canje/3000">Canjear ' . $premio3 . '</a> <br>');
+                        } ;
+                        if ($puntos==5000){
+                          echo ('<a href="/home/canje/5000">Canjear '. $premio4 . '</a> <br>');
                         } ;
 
-                        if ($puntos>=750){
-                          echo ('<a href="/home/canje/750">Canjear Premio 1</a>');
-                        }
 
                         ?>
                           <h4 class="bold title text-center">Bienvenido {{$nombreAuto}}</h4>
