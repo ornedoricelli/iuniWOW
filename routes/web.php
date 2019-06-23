@@ -12,6 +12,7 @@
 */
 
 Route::get('/cupon', 'BeneficiosController@showCupon');
+Route::post('/miperfil/editar', 'HomeController@cambiar');
 Route::get('/miperfil', 'HomeController@showPerfil');
 Route::get('/eventos', 'BeneficiosController@showEventos');
 Route::get('/beneficios' , 'BeneficiosController@showBeneficios');

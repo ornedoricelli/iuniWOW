@@ -8,6 +8,25 @@ use App\User;
 class HomeController extends Controller
 {
 
+  public function cambiar(Request $request){
+    //dd($request);
+    $usuario= User::find(1);
+    if (isset($request->premio1)) {
+      $usuario->premio1 = $request->premio1;
+      $usuario->save();
+      return redirect('miperfil');
+    };
+    if (isset($request->premio2)) {
+      $usuario->premio2 = $request->premio2;
+      $usuario->save();
+      return redirect('miperfil');
+    };
+    if (isset($request->premio3)) {
+      $usuario->premio3 = $request->premio3;
+      $usuario->save();
+      return redirect('miperfil');
+    };
+}
   public function canjear($puntos){
     $usuario = User::find(1);
     $usuario->puntos = $usuario->puntos - $puntos;

@@ -12,7 +12,7 @@
       <div class="row">
 
         <div class="col">
-            <div class="card bg-primary text-white text-center p-3 ">
+            <div class="card text-white text-center p-3" style="background-color:#1826c4">
       <blockquote class="blockquote mb-0">
         <p>Suma iuniPoints y renova tu poliza gratis.</p>
       </blockquote>
@@ -29,7 +29,7 @@
 
       <h4> Tu primer premio.</h4>
       <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
+        <label class="btn btn-secondary">
           <input type="radio" name="premio1" id="p1o1" value="TRATAMIENTO-CERA" autocomplete="off" checked> TRATAMIENTO CERA
         </label>
         <label class="btn btn-secondary">
@@ -47,7 +47,7 @@
       <div class="col">
       <h4> Tu segundo premio.</h4>
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-  <label class="btn btn-secondary active">
+  <label class="btn btn-secondary">
     <input type="radio" name="premio2" id="p2o1" value="ALINEACION-BALANCEO" autocomplete="off" checked> REJUV NEUMATICOS Y ALINEACION
   </label>
   <label class="btn btn-secondary">
@@ -66,7 +66,7 @@
 
       <h4> Tu tercer premio.</h4>
       <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
+        <label class="btn btn-secondary">
           <input type="radio" name="premio3" id="p3o1" value="WHISKEY-CARISIMO" autocomplete="off" checked> WHISKEY CARISIMO
         </label>
         <label class="btn btn-secondary">
@@ -84,7 +84,7 @@
       <div class="col">
 
       <h4> Tu GRAN premio.</h4>
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <div class="btn-group btn-group-toggle" style="width:100%" data-toggle="buttons">
         <label class="btn btn-secondary ">
           <input type="radio" name="premio4" id="poliza" value="POLIZA-POR-UN-ANO" autocomplete="off" checked> POLIZA GRATUITA
         </label>
@@ -96,7 +96,7 @@
   </div> <br>
   <div class="d-flex justify-content-center">
 
-      <button class="btn btn-primary" type="submit" name="button">EMPECEMOS</button>
+      <button class="btn text-white" type="submit" name="button" style="background-color: #1826c4">EMPECEMOS</button>
 
   </div>
 </form>
@@ -104,7 +104,7 @@
   <div class="card text-center">
 
   <div class="card-body">
-    <h5 class="card-title">¿Como sumo puntos?</h5>
+    <h5 class="card-title" style="color: #1826c4">¿Como sumo puntos?</h5>
     <p class="card-text">Todos los meses con el pago de la cuota de tu seguro sumas 100 puntos.</p>
     <p>Ademas, cada vez que ahorres con nuestros beneficios SUMAS!</p>
   </div>
