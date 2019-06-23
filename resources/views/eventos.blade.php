@@ -12,14 +12,27 @@
   @include('nav')
     <!------------------------------------------MENU BOTONES ------------------------------------------------------>
 
-        <ul class="nav nav-pills nav-fill">
+    <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
-                <a class="nav-link" href="beneficios">BENEFICIOS</a>
+                <a class="nav-link" href="../beneficios">BENEFICIOS WOW</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">EVENTOS</a>
+                <a class="nav-link active" href="/eventos">EXPERIENCIAS IUNIGAS</a>
             </li>
         </ul>
+
+        <div class="card mb-3" style="max-width: 540px;">
+        <div style="background-color: #f3f3f4" class="row no-gutters">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 style="color: #1826c4; font-weight: bold;" class="card-title">Disfruta de todas estas  EXPERIENCIAS IUNIGAS</h5>
+                    <h6 style="color: #1826c4; font-weight: bold;" class="card-text">En todos nuestros locales adheridos</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!----------------------------------------------EVENTOS 1-------------------------------------------------------->
 
