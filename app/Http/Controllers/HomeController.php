@@ -7,6 +7,15 @@ use App\User;
 
 class HomeController extends Controller
 {
+
+  public function canjear($puntos){
+    $usuario = User::find(1);
+    $usuario->puntos = $usuario->puntos - $puntos;
+
+    $usuario->save();
+
+    return redirect('/home');
+  }
   public function showHome(){
     $usuario = User::find(1);
     $puntos = $usuario->puntos;

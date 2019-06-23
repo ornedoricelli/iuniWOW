@@ -10,10 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/cupon', 'BeneficiosController@showCupon');
 Route::get('/miperfil', 'HomeController@showPerfil');
 Route::get('/eventos', 'BeneficiosController@showEventos');
 Route::get('/beneficios' , 'BeneficiosController@showBeneficios');
+Route::get('/home/canje/{puntos}', 'HomeController@canjear');
 Route::get('/home', 'HomeController@showHome');
 
 Route::post('/datospersonales','DatosController@saveDatos');

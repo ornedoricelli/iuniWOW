@@ -10,12 +10,35 @@
     @include('nav')
       <div class="container-fluid pl-0 pr-0">
               <div class="card m-5">
+                <div class="d-flex justify-content-between">
+                  <span class="badge badge-light">     </span>
+                  <span class="badge badge-light">🎁750</span>
+                  <span class="badge badge-light">🎁1500</span>
+                  <span class="badge badge-light">🎁3000</span>
+                  <span class="badge badge-light">🎁5000</span>
+                </div>
                   <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: {{$puntos*100/5000}}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{ceil($puntos*100/5000)}}%</div>
+                      <div class="progress-bar" role="progressbar" style="width: {{$puntos*100/5000}}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">🚗</div>
                   </div>
               </div>
-
                   <h1 class="text-center mb-5">{{$puntos}} <span class="badge badge-secondary">iúniPoints</span></h1>
+                        <?php
+                        if ($puntos==5000){
+                          echo ('<a href="/home/canje/5000">Canjear Premio 4</a>');
+                        } ;
+                        if ($puntos>=3000){
+                          echo ('<a href="/home/canje/3000">Canjear Premio 3</a>');
+                        } ;
+
+                        if ($puntos>=1500){
+                          echo ('<a href="/home/canje/1500">Canjear Premio 2</a>');
+                        } ;
+
+                        if ($puntos>=750){
+                          echo ('<a href="/home/canje/750">Canjear Premio 1</a>');
+                        }
+
+                        ?>
                           <h4 class="bold title text-center">Bienvenido {{$nombreAuto}}</h4>
             <div class="card m-5 alert alert-warning" role="alert">
                   <p class="text-center">¡Hola soy una alerta, no estoy terminada!</p>
